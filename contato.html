@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Eletrônicos Rodrigues</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Eletrônicos Rodrigues</h1></a>
+        <h5>Trazendo qualidade para sua casa desde 2005</h3>
+    </header>
+    <main>
+        <h3>Entre em contato</h3>
+        <form>
+            <fieldset>
+                <legend>Informações para contato</legend>
+                <label for="ipt-nome">Nome: </label>
+                <input 
+                    type="text" 
+                    name="nome" 
+                    id="ipt-nome">
+                <br>
+                <label for="ipt-email">E-mail: </label>
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="ipt-email"
+                    placeholder="nome@email.com">
+                <br>
+                <label for="ipt-cell">Telefone:* </label>
+                <input 
+                    type="tel" 
+                    name="tel" 
+                    id="ipt-cell" 
+                    required
+                    placeholder="+55 (00) 1234-5678">
+            </fieldset>
+            <fieldset>
+                <legend>Sobre o que quer perguntar?</legend>
+                <label for="ipt-razao">Razão: </label>
+                <select name="razao" id="ipt-razao">
+                    <option value="" selected disabled></option>
+                    <option value="problema">Problema com meu produto</option>
+                    <option value="ajuda">Ajuda com instalação</option>
+                    <option value="duvida-prod">Dúvidas sobre meu produto</option>
+                    <option value="duvida-loja">Dúvidas sobre a loja</option>
+                    <option value="reclamacao">Reclamação</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Sobre sua compra</legend>
+                <label for="ipt-local">Loja em que o produto foi comprado:</label>
+                <select name="local" id="ipt-local">
+                    <option value="" selected disabled></option>
+                    <option value="online">Comprei pelo website</option>
+                    <option value="sul">Comprei na loja sul</option>
+                    <option value="norte">Comprei na loja norte</option>
+                    <option value="na">Não comprei um produto</option>
+                </select>
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <br><br>
+        <a href="produtos.html">Produtos</a> · <a href="sobre.html">Sobre</a> · <a href="contato.html">Contato</a>
+    </footer>
+</body>
+</html>
